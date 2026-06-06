@@ -1,0 +1,2 @@
+这是一个适用于微信平台的小程序，通过询问身高、体重、年龄、性别、骑行时间、骑行强度（速度）来计算骑行的卡路里消耗，这个程序旨在将学校学习的运动医学运用到生活实际中，鼓励大家多运动，健康生活。
+This is a mini-program designed for the WeChat platform that calculates calorie expenditure from cycling by asking for height, weight, age, gender, riding duration, and intensity (speed). The program aims to apply sports medicine knowledge learned in school to real-life situations, encouraging people to exercise more and live healthier lives.
