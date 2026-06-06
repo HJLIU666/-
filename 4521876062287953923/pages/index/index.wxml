@@ -1,0 +1,27 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <view class="hero">
+    <image class="hero-icon" src="/images/Calorie_Calculator_Logo_Design.png" mode="aspectFit"></image>
+    <text class="hero-title">戈壁骑行补给助手</text>
+    <text class="hero-subtitle">Gobi Cycling Energy & Nutrition Planner</text>
+  </view>
+
+  <view class="description">
+    <text class="desc-text">🚴 根据骑行时间、强度判断能量消耗</text>
+    <text class="desc-text-english">Judge energy consumption based on the duration and intensity of the cycling.</text>
+    <text class="desc-text">💧 自动给出补水、补给、休息建议</text>
+    <text class="desc-text-english">Automatically provide suggestions for hydration, replenishment and rest.</text>
+    <text class="desc-text">🛡️ 关注身体状态，保障骑行安全</text>
+    <text class="desc-text-english">Pay attention to your physical condition and ensure your cycling safety.</text>
+
+  </view>
+
+  <button class="start-btn" bindtap="goToInput">点击开始使用 Press to use</button>
+
+  <view class="safety-note">
+    <text class="note-title">⚠️ 安全提醒</text>
+    <text class="note-title-english">safety remind</text>
+    <text class="note-text">本工具仅供参考，如有不适请立即停止骑行并寻求帮助</text>
+    <text class="note-text-english">This tool is for reference only. If you feel unwell, please stop cycling immediately and seek help.</text>
+  </view>
+</view>

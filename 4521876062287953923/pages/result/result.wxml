@@ -1,0 +1,46 @@
+<!-- pages/result/result.wxml -->
+<view class="container">
+  <view class="result-card {{riskLevel}}">
+    <text class="result-title">📋 补给建议</text>
+    <text class="result-subtitle">Nutrition Advice</text>
+
+    <!-- 能量消耗 -->
+    <view class="energy-box">
+      <text class="energy-label">⚡ 预估能量消耗</text>
+      <text class="energy-label-english">Prediction of energy used</text>
+      <text class="energy-value">{{energy}} <text class="energy-unit">kcal</text></text>
+    </view>
+
+    <!-- 风险等级 -->
+    <view class="risk-box">
+      <text class="risk-label">🚨 状态评估</text>
+      <text class="risk-label-english">Condition assessment</text>
+      <view class="risk-badge {{riskLevel}}">
+        <text>{{riskText}}</text>
+      </view>
+    </view>
+
+    <!-- 建议内容 -->
+    <view class="advice-box">
+      <text class="advice-label">💡 建议</text>
+      <text class="advice-label-english">Advice</text>
+      <text class="advice-text">{{advice}}</text>
+      <view class="divider"></view>
+      <text class="advice-en">{{adviceEn}}</text>
+    </view>
+
+    <!-- 营养小贴士 -->
+    <view class="nutrition-tip" wx:if="{{showNutrition}}">
+      <text class="tip-title">🥪 营养补给参考</text>
+      <text class="tip-title-english">Nutritional Supplement Reference</text>
+      <view class="tip-item" wx:for="{{nutritionItems}}" wx:key="index">
+        <text>{{item.icon}} {{item.name}}：{{item.amount}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="action-buttons">
+    <button class="recalc-btn" bindtap="recalculate">🔄 重新计算 Recalculate</button>
+    <button class="tips-btn" bindtap="goToTips">📖 骑行安全贴士 Cycling Safety Tips</button>
+  </view>
+</view>

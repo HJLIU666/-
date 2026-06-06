@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/input/input",
+    "pages/result/result",
+    "pages/tips/tips"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#cf6d34",
+    "navigationBarTitleText": "戈壁骑行补给助手",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F5F5"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

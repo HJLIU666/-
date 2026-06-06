@@ -1,0 +1,67 @@
+<!-- pages/tips/tips.wxml -->
+<view class="container">
+  <view class="header">
+    <text class="title">📖 骑行安全与营养贴士</text>
+    <text class="subtitle">Cycling Safety & Nutrition Tips</text>
+  </view>
+
+  <view class="section">
+    <text class="section-title">💧 补水建议</text>
+    <view class="card">
+      <text class="tip">• 每15-20分钟补水100-150ml</text>
+      <text class="tip-english">• Replenish 100–150 ml of water every 15–20 minutes.</text>
+      <text class="tip">• 每小时至少饮水500ml</text>
+      <text class="tip-english">• Drink at least 500 ml of water per hour.</text>
+      <text class="tip">• 建议携带运动饮料补充电解质</text>
+      <text class="tip-english">• It is recommended to bring sports drinks to replenish electrolytes.</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <text class="section-title">🍎 能量补给</text>
+    <view class="card">
+      <text class="tip">• 每骑行1小时补充1根能量棒</text>
+      <text class="tip-english">• Consume one energy bar for every hour of cycling.</text>
+      <text class="tip">• 香蕉是很好的天然能量来源</text>
+      <text class="tip-english">• Bananas are an excellent natural source of energy.</text>
+      <text class="tip">• 骑行前1-2小时进食，避免空腹</text>
+      <text class="tip-english">• Have a meal 1-2 hours before cycling to avoid being hungry.</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <text class="section-title">⚠️ 危险信号</text>
+    <view class="card">
+      <text class="tip">• 头晕、眼花 → 立即停车休息</text>
+      <text class="tip-english">• Dizziness and blurred vision → Stop the vehicle immediately and rest</text>
+      <text class="tip">• 恶心、胸闷 → 寻求帮助</text>
+      <text class="tip-english">• Nausea, chest tightness → Seek help</text>
+      <text class="tip">• 肌肉严重酸痛 → 停止骑行</text>
+      <text class="tip-english">• Severe muscle pain → Stop cycling</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <text class="section-title">🥪 骑行前营养准备</text>
+    <view class="card">
+      <text class="tip">• 早餐：全麦面包+鸡蛋+牛奶</text>
+      <text class="tip-english">• Breakfast: Whole wheat bread + eggs + milk</text>
+      <text class="tip">• 随身携带：能量胶/能量棒/干果</text>
+      <text class="tip-english">• Carry with you: Energy gels / energy bars / dried fruits</text>
+      <text class="tip">• 水壶：至少750ml x 2</text>
+      <text class="tip-english">• Water bottle: At least 750ml x 2</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <text class="section-title">📊 能量消耗参考</text>
+    <view class="card">
+      <text class="tip">• 轻松骑行：~6 kcal/分钟</text>
+      <text class="tip-english">• Easy cycling: ~6 kcal per minute</text>
+      <text class="tip">• 中等强度：~8 kcal/分钟</text>
+      <text class="tip-english">• Moderate intensity: ~8 kcal per minute</text>
+      <text class="tip">• 高强度：~10 kcal/分钟</text>
+      <text class="tip-english">• High intensity: ~10 kcal per minute</text>
+    </view>
+  </view>
+</view>

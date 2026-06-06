@@ -1,0 +1,105 @@
+<!-- pages/input/input.wxml -->
+<view class="container">
+  <view class="form-card">
+    <!--输入基本信息-->
+    <text class="form-title">💾 输入身体基本信息</text>
+    <text class="form-subtitle">Enter Your Basic Information</text>
+    <!--体重-->
+    <view class="form-item">
+      <text class="label">身体身高（厘米） <text class="label-en">Real Height (cm)</text></text>
+      <input class="input" type="number" placeholder="请输入 100~300 厘米" bindinput="get_height" value="{{height}}"/>
+      <text class="hint">建议范围：100~300 cm</text>
+    </view>
+    <!--身高-->
+    <view class="form-item">
+      <text class="label">身体体重（公斤） <text class="label-en">Real Weight (kg)</text></text>
+      <input class="input" type="number" placeholder="请输入 1~500 kg" bindinput="get_weight" value="{{weight}}"/>
+      <text class="hint">建议范围：30~500 kg</text>
+    </view>
+    <!--年龄-->
+    <view class="form-item">
+      <text class="label">身体年龄（岁） <text class="label-en">Real Age </text></text>
+      <input class="input" type="number" placeholder="请输入 1~150 岁" bindinput="get_age" value="{{age}}"/>
+      <text class="hint">建议范围：1~150 岁</text>
+    </view>
+    <!--性别-->
+    <view class="form-item">
+      <text class="label">👁️‍🗨️ 性别 <text class="label-en">Gender</text></text>
+      <view class="symptom-group">
+        <view class="symptom-option {{sex === 'male' ? 'active' : ''}}" bindtap="get_sex" data-value="male">
+          <text>👦 男 male</text>
+        </view>
+        <view class="symptom-option {{sex === 'female' ? 'active' : ''}}" bindtap="get_sex" data-value="female">
+          <text>👧 女 female</text>
+        </view>
+      </view>
+      <text class="hint-warning">我们坚信世界上只有两种性别，要么男，要么女</text>
+      <text class="hint-warning">We only believe that there are only two genders or sex in the world, only male or female</text>
+    </view>
+    <!-- 骑行时间 -->
+    <text class="form-title">📊 输入骑行数据</text>
+    <text class="form-subtitle">Enter Your Cycling Data</text>
+
+    <view class="form-item">
+      <text class="label">⏱️ 骑行时间 (分钟) <text class="label-en">Cycling Time (min)</text></text>
+      <input class="input" type="number" placeholder="请输入 1-500 分钟" bindinput="onTimeInput" value="{{time}}"/>
+      <text class="hint">建议范围：10-500 分钟</text>
+    </view>
+
+    <!-- 骑行强度 -->
+    <view class="form-item">
+      <text class="label">⚡ 骑行强度 <text class="label-en">Intensity</text></text>
+      <view class="intensity-group">
+        <view class="intensity-option {{intensity === 'relax' ? 'active' : ''}}" bindtap="selectIntensity" data-value="relax">
+          <text class="option-icon">🐢</text>
+          <text>休闲 (Relax)</text>
+          <text class="option-desc">less than 16 km/h</text>
+        </view>
+        <view class="intensity-option {{intensity === 'low' ? 'active' : ''}}" bindtap="selectIntensity" data-value="low">
+          <text class="option-icon">🧘</text>
+          <text>慢骑 (Slow)</text>
+          <text class="option-desc">16~19 km/h</text>
+        </view>
+        <view class="intensity-option {{intensity === 'medium' ? 'active' : ''}}" bindtap="selectIntensity" data-value="medium">
+          <text class="option-icon">🚴</text>
+          <text>中等 (Medium)</text>
+          <text class="option-desc">10~22 km/h</text>
+        </view>
+        <view class="intensity-option {{intensity === 'high' ? 'active' : ''}}" bindtap="selectIntensity" data-value="high">
+          <text class="option-icon">⚡</text>
+          <text>激烈 (High)</text>
+          <text class="option-desc">22~26 km/h</text>
+        </view>
+        <view class="intensity-option {{intensity === 'extreme' ? 'active' : ''}}" bindtap="selectIntensity" data-value="extreme">
+          <text class="option-icon">💪</text>
+          <text>高强 (Extreme)</text>
+          <text class="option-desc">26~30 km/h</text>
+        </view>
+        <view class="intensity-option {{intensity === 'Vextreme' ? 'active' : ''}}" bindtap="selectIntensity" data-value="Vextreme">
+          <text class="option-icon">🚅</text>
+          <text>超强 (Very Extreme)</text>
+          <text class="option-desc">more than 30 km/h</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 身体症状 -->
+    <view class="form-item">
+      <text class="label">🤕 身体状态 <text class="label-en">Body Condition</text></text>
+      <view class="symptom-group">
+        <view class="symptom-option {{symptom === 'yes' ? 'active-warning' : ''}}" bindtap="selectSymptom" data-value="yes">
+          <text>⚠️ 有不适 (头晕/胸闷/腿酸)</text>
+          <text class="option-desc">Feeling not good ( dizzy or chess distress or leg aches )</text>
+        </view>
+        <view class="symptom-option {{symptom === 'no' ? 'active' : ''}}" bindtap="selectSymptom" data-value="no">
+          <text>✅ 状态良好</text>
+          <text class="option-desc">Feeling well</text>
+        </view>
+      </view>
+      <text class="hint-warning">如有明显不适，系统会建议立即休息</text>
+    </view>
+
+    <!-- 按钮 -->
+    <button class="calc-btn" bindtap="calculate">🚀 计算补给建议 Calculate advice</button>
+  </view>
+</view>

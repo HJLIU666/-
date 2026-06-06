@@ -1,0 +1,135 @@
+/* pages/input/input.wxss */
+.container {
+  min-height: 100vh;
+  background: #F5F5F5;
+  padding: 30rpx;
+}
+
+.form-card {
+  background: white;
+  border-radius: 48rpx;
+  padding: 40rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0,0,0,0.08);
+}
+
+.form-title {
+  display: block;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #7d752e;
+}
+
+.form-subtitle {
+  display: block;
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 8rpx;
+  margin-bottom: 40rpx;
+}
+
+.form-item {
+  margin-bottom: 48rpx;
+}
+
+.label {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.label-en {
+  font-size: 24rpx;
+  color: #999;
+  font-weight: normal;
+  margin-left: 12rpx;
+}
+
+.input {
+  background: #F8F8F8;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  font-size: 32rpx;
+  border: 2rpx solid #EEE;
+}
+
+.hint {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 12rpx;
+}
+
+.hint-warning {
+  display: block;
+  font-size: 24rpx;
+  color: #FF9800;
+  margin-top: 12rpx;
+}
+
+.intensity-group, .symptom-group {
+  display: flex;
+  gap: 20rpx;
+  flex-wrap: wrap;
+}
+
+.intensity-option {
+  flex: 1;
+  background: #F8F8F8;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  text-align: center;
+  border: 2rpx solid #EEE;
+  transition: all 0.2s;
+}
+
+.intensity-option.active {
+  background: #E8F5E9;
+  border-color: #4CAF50;
+}
+
+.option-icon {
+  display: block;
+  font-size: 48rpx;
+  margin-bottom: 8rpx;
+}
+
+.option-desc {
+  display: block;
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 8rpx;
+}
+
+.symptom-option {
+  flex: 1;
+  display: flex;              
+  flex-direction: column;     
+  align-items: center;       
+  justify-content: center;    
+  background: #F8F8F8;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  border: 2rpx solid #EEE;
+}
+
+.symptom-option.active {
+  background: #E8F5E9;
+  border-color: #4CAF50;
+}
+
+.symptom-option.active-warning {
+  background: #FFEBEE;
+  border-color: #F44336;
+}
+
+.calc-btn {
+  background: linear-gradient(135deg, #7d752e, #af954c);
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+  border-radius: 60rpx;
+  margin-top: 40rpx;
+  padding: 28rpx 0;
+}

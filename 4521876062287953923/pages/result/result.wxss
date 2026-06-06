@@ -1,0 +1,215 @@
+/* pages/result/result.wxss */
+.container {
+  min-height: 100vh;
+  background: #F5F5F5;
+  padding: 30rpx;
+}
+
+.result-card {
+  background: white;
+  border-radius: 48rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0,0,0,0.08);
+}
+
+.result-card.danger {
+  border-left: 12rpx solid #F44336;
+}
+
+.result-card.warning {
+  border-left: 12rpx solid #FF9800;
+}
+
+.result-card.caution {
+  border-left: 12rpx solid #2196F3;
+}
+
+.result-card.safe {
+  border-left: 12rpx solid #4CAF50;
+}
+
+.result-title {
+  display: block;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.result-subtitle {
+  display: block;
+  font-size: 26rpx;
+  color: #999;
+  margin-bottom: 40rpx;
+}
+
+.energy-box {
+  background: #E8F5E9;
+  border-radius: 32rpx;
+  padding: 32rpx;
+  text-align: center;
+  margin-bottom: 32rpx;
+}
+
+.energy-label {
+  display: block;
+  font-size: 40rpx;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.energy-label-english {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.energy-value {
+  font-size: 64rpx;
+  font-weight: bold;
+  color: #2E7D32;
+}
+
+.energy-unit {
+  font-size: 32rpx;
+}
+
+.risk-box {
+  margin-bottom: 32rpx;
+}
+
+.risk-label {
+  display: block;
+  font-size: 40rpx;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.risk-label-english {
+  display: block;
+  font-size: 30rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 16rpx 32rpx;
+  border-radius: 48rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.risk-badge.danger {
+  background: #FFEBEE;
+  color: #F44336;
+}
+
+.risk-badge.warning {
+  background: #FFF3E0;
+  color: #FF9800;
+}
+
+.risk-badge.caution {
+  background: #E3F2FD;
+  color: #2196F3;
+}
+
+.risk-badge.safe {
+  background: #E8F5E9;
+  color: #4CAF50;
+}
+
+.advice-box {
+  background: #F8F8F8;
+  border-radius: 32rpx;
+  padding: 32rpx;
+  margin-bottom: 32rpx;
+}
+
+.advice-label {
+  display: block;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.advice-label-english {
+  display: block;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 16rpx;
+}
+
+.advice-text {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #2E7D32;
+  margin-bottom: 16rpx;
+}
+
+.divider {
+  height: 2rpx;
+  background: #E0E0E0;
+  margin: 20rpx 0;
+}
+
+.advice-en {
+  display: block;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+}
+
+.nutrition-tip {
+  background: #FFF8E1;
+  border-radius: 32rpx;
+  padding: 32rpx;
+}
+
+.tip-title {
+  display: block;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #FF8F00;
+  margin-bottom: 24rpx;
+}
+
+.tip-title-english {
+  display: block;
+  font-size: 20rpx;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 16rpx;
+}
+
+.tip-item {
+  font-size: 28rpx;
+  color: #666;
+  margin: 16rpx 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20rpx;
+}
+
+.recalc-btn, .tips-btn {
+  flex: 1;
+  border-radius: 60rpx;
+  padding: 28rpx 0;
+  font-size: 32rpx;
+}
+
+.recalc-btn {
+  background: #EEEEEE;
+  color: #666;
+}
+
+.tips-btn {
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  color: white;
+}
